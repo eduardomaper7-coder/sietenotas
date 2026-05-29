@@ -1,7 +1,7 @@
 const Hero = () => {
-  const whatsappNumber = '34678518914'
+  const whatsappNumber = '34662128572'
   const whatsappMessage = encodeURIComponent(
-    'Hola, quiero pedir cita en Clínica Dental Dra. Anna Tavarone.'
+    'Hola, quiero pedir información en Siete Notas.'
   )
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`
 
@@ -12,7 +12,7 @@ const Hero = () => {
       id="inicio"
       className="relative flex min-h-screen items-center justify-center overflow-hidden"
       style={{
-        backgroundImage: "url('/hero-dentista-usera.png')",
+        backgroundImage: "url('/hero-siete-notas-leganes.png')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -20,42 +20,42 @@ const Hero = () => {
       }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-green-900/45"></div>
-      <div className="absolute inset-0 bg-gradient-to-b from-green-700/20 via-green-800/35 to-green-950/75"></div>
+      <div className="absolute inset-0 bg-purple-900/45"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-purple-700/20 via-purple-800/35 to-purple-950/75"></div>
 
       <div className="relative z-10 mx-auto flex max-w-5xl flex-col items-center px-4 pb-12 pt-24 text-center sm:pb-16 sm:pt-28">
         
         {/* Título superior */}
         <div className="mb-4 flex flex-col items-center sm:mb-6">
           <span className="text-lg font-light tracking-widest text-white/80 sm:text-2xl">
-            CLÍNICA DENTAL EN USERA
+            ESCUELA DE BAILE Y MÚSICA EN LEGANÉS
           </span>
 
           <span className="text-2xl font-extrabold tracking-wide text-white sm:text-3xl md:text-4xl">
-            Dra. Anna Tavarone
+            Siete Notas
           </span>
         </div>
 
         {/* H1 */}
         <h1 className="max-w-4xl text-3xl font-extrabold leading-tight text-white sm:text-5xl md:text-7xl">
-          Dentista en Usera con 30 años de experiencia
+          Aprende música y baile en Leganés
         </h1>
 
         {/* Texto (oculto en móvil) */}
         <p className="mt-6 hidden max-w-3xl text-lg leading-9 text-white/90 sm:block sm:text-xl">
-          Clínica Dental Dra. Anna Tavarone. Cuidamos tu salud bucodental con
-          tratamientos personalizados, atención cercana y un equipo profesional
-          acreditado por más de 30 años en Usera.
+          En Siete Notas disfrutamos enseñando música y baile a alumnos de todas
+          las edades, con clases dinámicas, atención cercana y un ambiente ideal
+          para aprender, expresarte y pasarlo bien.
         </p>
 
         {/* Badges */}
         <div className="mt-6 flex flex-col gap-2 sm:mt-8 sm:flex-row sm:gap-3">
-          <span className="rounded-full bg-white/95 px-5 py-2 text-sm font-bold text-green-700 shadow-lg sm:px-6 sm:py-3 sm:text-base">
-            Radiografía y presupuesto gratis
+          <span className="rounded-full bg-white/95 px-5 py-2 text-sm font-bold text-purple-700 shadow-lg sm:px-6 sm:py-3 sm:text-base">
+            Clases de música y baile
           </span>
 
-          <span className="rounded-full bg-white/95 px-5 py-2 text-sm font-bold text-green-700 shadow-lg sm:px-6 sm:py-3 sm:text-base">
-            30 años en Usera
+          <span className="rounded-full bg-white/95 px-5 py-2 text-sm font-bold text-purple-700 shadow-lg sm:px-6 sm:py-3 sm:text-base">
+            Escuela en Leganés
           </span>
         </div>
 
@@ -67,7 +67,7 @@ const Hero = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="flex w-full items-center justify-center gap-3 rounded-xl bg-green-500 px-6 py-4 text-base font-extrabold text-white shadow-xl transition hover:bg-green-600 sm:w-auto sm:px-8 sm:text-lg"
-            aria-label="Pedir cita por WhatsApp"
+            aria-label="Pedir información por WhatsApp"
           >
             <img
               src="/whatsapp.png"
@@ -75,13 +75,13 @@ const Hero = () => {
               className="h-6 w-6 sm:h-7 sm:w-7"
               aria-hidden="true"
             />
-            Pedir cita por WhatsApp
+            Pedir información por WhatsApp
           </a>
 
           <a
-            href="tel:914763069"
-            className="flex w-full items-center justify-center rounded-xl bg-white/95 px-6 py-4 text-base font-extrabold text-green-700 shadow-xl transition hover:bg-white sm:w-auto sm:px-8 sm:text-lg whitespace-nowrap"
-            aria-label="Llamar a Clínica Dental Dra. Anna Tavarone"
+            href="tel:918281988"
+            className="flex w-full items-center justify-center rounded-xl bg-white/95 px-6 py-4 text-base font-extrabold text-purple-700 shadow-xl transition hover:bg-white sm:w-auto sm:px-8 sm:text-lg whitespace-nowrap"
+            aria-label="Llamar a Siete Notas"
           >
             Llamar ahora
           </a>
@@ -91,9 +91,9 @@ const Hero = () => {
         {/* Link servicios */}
         <a
           href="#servicios"
-          className="mt-5 hidden items-center rounded-xl border border-white px-8 py-4 text-lg font-semibold text-white transition hover:bg-white hover:text-green-700 sm:inline-flex"
+          className="mt-5 hidden items-center rounded-xl border border-white px-8 py-4 text-lg font-semibold text-white transition hover:bg-white hover:text-purple-700 sm:inline-flex"
         >
-          Ver tratamientos dentales
+          Ver clases
         </a>
 
         {/* Scroll */}

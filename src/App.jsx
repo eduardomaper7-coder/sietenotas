@@ -27,10 +27,10 @@ const Home = () => (
     <WhyUs />
     <FeaturedBox />
     <HowWeWork />
-    <Testimonials />
     <BlogSection />
     <Location />
     <ContactSection />
+    <Testimonials />
     <Footer />
   </>
 )

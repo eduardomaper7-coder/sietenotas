@@ -1,97 +1,109 @@
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa'
-import { Link } from 'react-router-dom'
-
 const Footer = () => {
-  return (
-    <footer className="bg-black text-white">
-      <div className="mx-auto max-w-7xl px-4 py-14">
-        <div className="grid gap-12 md:grid-cols-2 md:items-start">
-          
-          {/* Info */}
-          <div>
-            <div className="mb-6 leading-tight">
-              <span className="block text-2xl font-extrabold text-white">
-                CLÍNICA DENTAL
-              </span>
-              <span className="block text-green-600 text-lg font-semibold">
-                Dra. Anna Tavarone
-              </span>
-            </div>
+  const year = new Date().getFullYear()
 
-            <p className="max-w-2xl text-lg leading-relaxed text-white/90">
-              Clínica dental en Usera con más de 30 años de experiencia. 
-              Especialistas en tratamientos personalizados para cuidar tu salud 
-              bucodental y mejorar tu sonrisa.
+  return (
+    <footer className="relative overflow-hidden bg-purple-950 text-white">
+      {/* Fondo decorativo */}
+      <div className="absolute -left-32 top-0 h-80 w-80 rounded-full bg-fuchsia-500/10 blur-3xl"></div>
+      <div className="absolute -right-32 bottom-0 h-96 w-96 rounded-full bg-purple-400/10 blur-3xl"></div>
+
+      <div className="relative z-10 mx-auto max-w-7xl px-6 py-20">
+        
+        {/* Parte superior */}
+        <div className="grid gap-12 md:grid-cols-4">
+          
+          {/* Marca */}
+          <div>
+            <h3 className="text-3xl font-extrabold tracking-[0.12em] text-white">
+              SIETE NOTAS
+            </h3>
+            <p className="mt-3 text-purple-200">
+              Escuela de Baile y Música en Leganés
             </p>
 
-            <div className="mt-8 flex items-center gap-5">
-              <a href="#" aria-label="Facebook" className="text-2xl text-green-600 transition hover:text-white">
-                <FaFacebookF />
-              </a>
-              <a href="#" aria-label="Instagram" className="text-2xl text-green-600 transition hover:text-white">
-                <FaInstagram />
-              </a>
-              <a href="#" aria-label="LinkedIn" className="text-2xl text-green-600 transition hover:text-white">
-                <FaLinkedinIn />
-              </a>
-            </div>
+            <p className="mt-6 leading-8 text-white/70">
+              Un espacio donde música, danza, bienestar y aprendizaje se unen
+              para todas las edades.
+            </p>
+          </div>
+
+          {/* Navegación */}
+          <div>
+            <h4 className="text-lg font-bold text-fuchsia-300">
+              Secciones
+            </h4>
+
+            <ul className="mt-5 space-y-3 text-white/80">
+              <li><a href="#danza" className="hover:text-white">Danza</a></li>
+              <li><a href="#musica" className="hover:text-white">Música</a></li>
+              <li><a href="#senior" className="hover:text-white">Senior</a></li>
+              <li><a href="#gym" className="hover:text-white">Gym</a></li>
+              <li><a href="#belleza" className="hover:text-white">Belleza y Bienestar</a></li>
+            </ul>
           </div>
 
           {/* Contacto */}
-          <div className="text-left md:text-right">
-            <h3 className="text-3xl font-bold text-green-600">Contacto</h3>
+          <div>
+            <h4 className="text-lg font-bold text-fuchsia-300">
+              Contacto
+            </h4>
 
-            <div className="mt-6 space-y-4 text-lg leading-relaxed">
-              <p>
-                C. de Nicolás Sánchez, 4, 1º Izquierda<br />
-                Usera, 28026 Madrid
-              </p>
+            <div className="mt-5 space-y-4 text-white/80">
+              <p>📍 C. Torrubia, 4, 28911 Leganés, Madrid</p>
+              <p>📞 918 28 19 88</p>
+              <p>💬 662 12 85 72</p>
+            </div>
+          </div>
 
-              <p>
-                <a
-                  href="tel:914763069"
-                  className="whitespace-nowrap font-bold text-white transition hover:text-green-600"
-                >
-                  914 76 30 69
-                </a>
-              </p>
+          {/* CTA */}
+          <div>
+            <h4 className="text-lg font-bold text-fuchsia-300">
+              Empieza hoy
+            </h4>
 
-              <p>
-                <a
-                  href="mailto:info@clinicadentalannarone.com"
-                  className="text-green-600 transition hover:text-white"
-                >
-                  info@clinicadentalannarone.com
-                </a>
-              </p>
+            <p className="mt-5 text-white/80">
+              Solicita información o reserva tu plaza.
+            </p>
+
+            <div className="mt-6 flex flex-col gap-3">
+              <a
+                href="tel:918281988"
+                className="rounded-2xl bg-white px-5 py-3 text-center font-bold text-purple-700 transition hover:scale-105"
+              >
+                Llamar ahora
+              </a>
+
+              <a
+                href="https://wa.me/34662128572"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-2xl bg-green-500 px-5 py-3 text-center font-bold text-white transition hover:scale-105 hover:bg-green-600"
+              >
+                WhatsApp
+              </a>
             </div>
           </div>
         </div>
 
-        {/* CTA */}
-        <div className="mt-12 flex flex-col items-center justify-center gap-4 text-center">
-          <p className="text-lg text-white/90">
-            ¿Necesitas pedir cita o más información?
+        {/* Línea */}
+        <div className="my-12 h-px bg-white/10"></div>
+
+        {/* Parte inferior */}
+        <div className="flex flex-col items-center justify-between gap-4 text-center text-sm text-white/60 md:flex-row">
+          <p>
+            © {year} Siete Notas · Todos los derechos reservados
           </p>
 
-          <Link
-            to="/#contacto"
-            className="rounded-xl bg-green-600 px-8 py-3 text-lg font-bold text-white transition hover:bg-green-700"
-          >
-            Solicitar cita
-          </Link>
-        </div>
-
-        {/* Footer bottom */}
-        <div className="mt-12 border-t border-white/15 pt-8 text-center">
-          <p className="text-base text-white/80">
-            © 2026 Clínica Dental Dra. Anna Tavarone. Todos los derechos reservados.
-          </p>
-
-          <div className="mt-5 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm text-green-600">
-            <Link to="/legal" className="transition hover:text-white">
-              Aviso legal · Privacidad · Cookies
-            </Link>
+          <div className="flex gap-6">
+            <a href="#" className="hover:text-white">
+              Política de privacidad
+            </a>
+            <a href="#" className="hover:text-white">
+              Aviso legal
+            </a>
+            <a href="#" className="hover:text-white">
+              Cookies
+            </a>
           </div>
         </div>
       </div>

@@ -1,106 +1,161 @@
-import { Link } from 'react-router-dom'
+const DanzaSection = () => {
+  const disciplinas = [
+    {
+      nombre: 'Ballet Clásico',
+      icono: '🩰',
+      horarios: [
+        'Baby · Lunes 17:00 - 18:00',
+        'Infantil · Lunes 18:00 - 19:00',
+        'Junior · Lunes 19:00 - 20:00',
+        'Adultos · Lunes 20:00 - 21:00',
+      ],
+    },
+    {
+      nombre: 'Danza Española e Iniciación Flamenco',
+      icono: '💃',
+      horarios: [
+        'Infantil · L/X 17:30 - 18:30',
+        'Junior · L/X 16:30 - 17:30',
+      ],
+    },
+    {
+      nombre: 'Flamenco',
+      icono: '🔥',
+      horarios: [
+        'Lunes 18:30 - 19:30',
+        'Miércoles 10:00 - 11:00',
+      ],
+      extra: 'Especialización para adultos',
+    },
+    {
+      nombre: 'Danza Urbana',
+      icono: '🎧',
+      horarios: [
+        'Baby · M/X/J 17:00 - 18:00',
+        'Infantil · M/X/J 18:00 - 19:00',
+        'Junior · M/X/J 19:00 - 20:00',
+        'Adultos · M/X/J 20:00 - 21:00',
+      ],
+    },
+    {
+      nombre: 'Danza Moderna',
+      icono: '✨',
+      horarios: [
+        'Baby · Viernes 17:00 - 18:00',
+        'Infantil · Viernes 18:00 - 19:00',
+        'Junior · Viernes 19:00 - 20:00',
+        'Adultos · Viernes 20:00 - 21:00',
+      ],
+    },
+    {
+      nombre: 'Baile de Salón',
+      icono: '🕺',
+      horarios: ['Lunes y Miércoles 17:00 - 18:00'],
+    },
+    {
+      nombre: 'Baile Latino',
+      icono: '🌴',
+      horarios: ['Martes y Viernes 21:00 - 22:00'],
+    },
+  ]
 
-const services = [
-  {
-    title: 'Fundas de porcelana y Zirconio',
-    description:
-      'Soluciones estéticas y funcionales para proteger dientes debilitados, mejorar la mordida y recuperar una sonrisa natural.',
-    image: '/funda-porcelana-siliconio-usera.jpg',
-  },
-  {
-    title: 'Tratamiento de encías (encías sangrantes)',
-    description:
-      'Diagnóstico y tratamiento de problemas periodontales para cuidar tus encías, prevenir molestias y conservar tus dientes.',
-    image: '/tratamiento-encias-usera.webp',
-  },
-  {
-    title: 'Implantes dentales',
-    description:
-      'Recupera piezas dentales perdidas con soluciones seguras, estables y pensadas para mejorar la masticación y la estética.',
-    image: '/implantes-dentales-usera.jpg',
-  },
-  {
-    title: 'Endodoncia',
-    description:
-      'Tratamiento para salvar dientes dañados o infectados, aliviar el dolor y evitar la extracción cuando es posible.',
-    image: '/endodoncia-usera.png',
-  },
-]
-
-const Treatments = () => {
   return (
-    <section id="servicios" className="scroll-mt-28 bg-[#f6fbf7] py-16">
-      <div className="mx-auto max-w-7xl px-4">
-        <div className="mb-16 text-center">
-          <span className="text-sm font-bold uppercase tracking-[0.25em] text-green-600">
-            Tratamientos destacados
+    <section
+      id="danza"
+      className="relative min-h-screen overflow-hidden bg-gradient-to-br from-purple-950 via-purple-800 to-fuchsia-700 py-28"
+    >
+      <div className="absolute -left-32 top-20 h-96 w-96 rounded-full bg-pink-400/20 blur-3xl"></div>
+      <div className="absolute -right-32 bottom-20 h-[500px] w-[500px] rounded-full bg-purple-300/20 blur-3xl"></div>
+
+      <div className="relative z-10 mx-auto max-w-7xl px-6">
+        
+        {/* Cabecera */}
+        <div className="mx-auto max-w-4xl text-center">
+          <span className="rounded-full border border-white/20 bg-white/10 px-5 py-2 text-sm font-semibold tracking-widest text-white backdrop-blur-md">
+            ESCUELA DE DANZA
           </span>
 
-          <h2 className="mt-3 text-3xl font-extrabold text-green-700 sm:text-4xl">
-            Servicios dentales en Usera
+          <h2 className="mt-6 text-5xl font-extrabold text-white md:text-7xl">
+            Vive la danza
+            <span className="block text-pink-300">
+              en todas sus formas
+            </span>
           </h2>
 
-          <p className="mx-auto mt-4 max-w-3xl text-lg text-neutral-600 sm:text-xl">
-            En Clínica Dental Dra. Anna Tavarone destacamos algunos de nuestros
-            tratamientos más solicitados, aunque contamos con muchos más
-            servicios para cuidar tu salud bucodental.
+          <p className="mt-8 text-xl leading-9 text-white/85">
+            Formación para todas las edades, desde iniciación hasta especialización,
+            con certificación oficial y opción de competición.
           </p>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-2">
-          {services.map((service, index) => (
+        {/* Grid */}
+        <div className="mt-20 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          {disciplinas.map((item) => (
             <div
-              key={index}
-              className="flex flex-col overflow-hidden rounded-2xl bg-white shadow-[0_10px_30px_rgba(22,101,52,0.10)] transition hover:-translate-y-1 hover:shadow-[0_15px_40px_rgba(22,101,52,0.16)] sm:flex-row"
+              key={item.nombre}
+              className="rounded-3xl border border-white/15 bg-white/10 p-7 backdrop-blur-xl transition hover:-translate-y-2 hover:bg-white/15"
             >
-              <div className="h-56 w-full sm:h-auto sm:w-[40%]">
-                <img
-                  src={service.image}
-                  alt={`${service.title} en Usera - Clínica Dental Dra. Anna Tavarone`}
-                  className="h-full w-full object-cover"
-                  loading="lazy"
-                />
-              </div>
+              <div className="mb-5 text-5xl">{item.icono}</div>
 
-              <div className="flex w-full flex-col justify-between p-6 sm:w-[60%]">
-                <div>
-                  <h3 className="text-xl font-extrabold text-green-700 sm:text-2xl">
-                    {service.title}
-                  </h3>
+              <h3 className="text-2xl font-extrabold text-white">
+                {item.nombre}
+              </h3>
 
-                  <p className="mt-3 text-base leading-8 text-neutral-600 sm:text-lg">
-                    {service.description}
+              <div className="mt-5 space-y-3">
+                {item.horarios.map((horario, i) => (
+                  <p key={i} className="rounded-xl bg-white/10 px-4 py-3 text-white/90">
+                    {horario}
                   </p>
-                </div>
-
-                <div className="mt-6">
-                  <Link
-                    to="/tratamientos"
-                    className="inline-flex items-center gap-2 text-base font-semibold text-green-700 transition hover:text-green-900"
-                  >
-                    Más información →
-                  </Link>
-                </div>
+                ))}
               </div>
+
+              {item.extra && (
+                <p className="mt-5 rounded-2xl bg-pink-500/20 px-4 py-3 text-sm font-semibold text-white">
+                  {item.extra}
+                </p>
+              )}
             </div>
           ))}
         </div>
 
-        <div className="mt-14 text-center">
-          <p className="text-lg font-medium text-neutral-700">
-            ¿Buscas otro tratamiento dental?
-          </p>
+        {/* Bloques inferiores */}
+        <div className="mt-20 grid gap-8 md:grid-cols-2">
+          
+          <div className="rounded-3xl bg-white/10 p-8 backdrop-blur-xl">
+            <h3 className="text-3xl font-extrabold text-pink-300">
+              Certificación
+            </h3>
+            <p className="mt-4 text-lg leading-8 text-white/85">
+              En Siete Notas puedes certificar tus estudios de danza, ya que somos
+              Centro Examinador ACADE.
+            </p>
+          </div>
 
-          <Link
-            to="/tratamientos"
-            className="mt-5 inline-flex items-center rounded-xl bg-green-700 px-8 py-4 text-lg font-bold text-white shadow-lg transition hover:bg-green-800"
-          >
-            Ver todos los tratamientos
-          </Link>
+          <div className="rounded-3xl bg-white/10 p-8 backdrop-blur-xl">
+            <h3 className="text-3xl font-extrabold text-pink-300">
+              Competición
+            </h3>
+            <p className="mt-4 text-lg leading-8 text-white/85">
+              Participa y demuestra tu evolución en campeonatos provinciales,
+              nacionales e internacionales.
+            </p>
+          </div>
+
         </div>
+
+        {/* CTA */}
+        <div className="mt-16 text-center">
+          <a
+            href="#contacto"
+            className="inline-flex rounded-2xl bg-pink-500 px-10 py-5 text-lg font-bold text-white shadow-2xl transition hover:scale-105 hover:bg-pink-600"
+          >
+            Consulta horarios disponibles
+          </a>
+        </div>
+
       </div>
     </section>
   )
 }
 
-export default Treatments
+export default DanzaSection

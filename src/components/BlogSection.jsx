@@ -1,95 +1,88 @@
-const posts = [
-  {
-    date: '1 abril, 2026',
-    title: 'Implantes dentales: cuándo son necesarios y qué ventajas tienen',
-    excerpt:
-      'Los implantes dentales ayudan a recuperar piezas perdidas y mejorar la funcionalidad de la boca. Te explicamos cuándo se recomiendan y qué beneficios ofrecen.',
-    image:
-      'https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&w=1200&q=80',
-    href: '#',
-  },
-  {
-    date: '1 abril, 2026',
-    title: 'Limpieza dental profesional: por qué es importante hacerla',
-    excerpt:
-      'Una limpieza dental ayuda a prevenir problemas de encías, caries y acumulación de sarro. Descubre cada cuánto conviene realizarla y por qué es clave para tu salud bucodental.',
-    image:
-      'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80',
-    href: '#',
-  },
-  {
-    date: '25 marzo, 2026',
-    title: 'Blanqueamiento dental: cómo funciona y qué debes saber',
-    excerpt:
-      'El blanqueamiento dental puede mejorar la estética de tu sonrisa de forma segura si se realiza bajo supervisión profesional. Te contamos lo más importante antes de empezar.',
-    image:
-      'https://images.unsplash.com/photo-1598257006626-48b0c252070d?auto=format&fit=crop&w=1200&q=80',
-    href: '#',
-  },
-]
+const DeporteTerapeuticoSection = () => {
+  const actividades = [
+    {
+      nombre: 'Pilates',
+      icono: '🤸',
+      dias: 'Martes y Jueves',
+      horarios: ['18:00 - 19:00', '19:00 - 20:00', '20:00 - 21:00'],
+    },
+    {
+      nombre: 'Yoga y Meditación',
+      icono: '🧘',
+      dias: 'Lunes y Miércoles',
+      horarios: ['18:00 - 19:00', '19:00 - 20:00', '20:00 - 21:00'],
+    },
+    {
+      nombre: 'Cuencos Tibetanos',
+      icono: '🔔',
+      dias: 'Actividad especial',
+      horarios: ['Pospuesta temporalmente'],
+      texto:
+        'Organizamos conciertos de cuencos tibetanos. Una experiencia única para conectar contigo mismo.',
+    },
+  ]
 
-const BlogSection = () => {
   return (
-    <section className="bg-[#f5f5f3] py-20">
-      <div className="mx-auto max-w-7xl px-4">
-        
-        {/* Título */}
-        <div className="mx-auto mb-14 max-w-3xl text-center">
-          <h2 className="text-3xl font-extrabold text-black sm:text-4xl">
-            Blog
+    <section
+      id="deporte-terapeutico"
+      className="relative min-h-screen overflow-hidden bg-gradient-to-br from-emerald-50 via-purple-50 to-fuchsia-100 py-28"
+    >
+      <div className="absolute -left-32 bottom-20 h-96 w-96 rounded-full bg-emerald-300/30 blur-3xl"></div>
+      <div className="absolute -right-32 top-20 h-[500px] w-[500px] rounded-full bg-purple-300/30 blur-3xl"></div>
+
+      <div className="relative z-10 mx-auto max-w-7xl px-6">
+        <div className="mx-auto max-w-4xl text-center">
+          <span className="rounded-full bg-purple-100 px-5 py-2 text-sm font-bold tracking-widest text-purple-700">
+            DEPORTE TERAPÉUTICO
+          </span>
+
+          <h2 className="mt-6 text-5xl font-extrabold text-purple-950 md:text-7xl">
+            Movimiento consciente
+            <span className="block text-purple-600">para sentirte mejor.</span>
           </h2>
 
-          <p className="mt-4 text-lg text-neutral-600">
-            Artículos y consejos para cuidar tu salud bucodental
+          <p className="mt-8 text-xl leading-9 text-purple-950/70">
+            Actividades pensadas para mejorar tu bienestar físico y mental,
+            trabajando cuerpo, respiración y equilibrio.
           </p>
         </div>
 
-        {/* Grid */}
-        <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
-          {posts.map((post, index) => (
-            <article
-              key={index}
-              className="overflow-hidden rounded-xl bg-white shadow-[0_8px_24px_rgba(0,0,0,0.08)] transition hover:-translate-y-1 hover:shadow-[0_12px_30px_rgba(0,0,0,0.12)]"
+        <div className="mt-20 grid gap-8 md:grid-cols-3">
+          {actividades.map((item) => (
+            <div
+              key={item.nombre}
+              className="rounded-3xl bg-white p-8 shadow-2xl transition hover:-translate-y-2"
             >
-              
-              {/* Imagen */}
-              <div className="h-56 overflow-hidden">
-                <img
-                  src={post.image}
-                  alt={post.title}
-                  className="h-full w-full object-cover transition duration-500 hover:scale-105"
-                />
-              </div>
+              <div className="mb-5 text-5xl">{item.icono}</div>
 
-              {/* Contenido */}
-              <div className="p-6">
-                <p className="text-sm text-neutral-500">📅 {post.date}</p>
+              <h3 className="text-2xl font-extrabold text-purple-950">
+                {item.nombre}
+              </h3>
 
-                <h3 className="mt-4 text-2xl font-extrabold leading-tight text-black">
-                  {post.title}
-                </h3>
+              <p className="mt-4 font-bold text-purple-600">{item.dias}</p>
 
-                <p className="mt-4 text-base leading-8 text-neutral-700">
-                  {post.excerpt}
-                </p>
-
-                <div className="mt-6 flex justify-end">
-                  <a
-                    href={post.href}
-                    className="inline-flex items-center gap-2 text-lg font-medium text-[#E4B525] transition hover:text-black"
+              <div className="mt-5 flex flex-wrap gap-2">
+                {item.horarios.map((horario) => (
+                  <span
+                    key={horario}
+                    className="rounded-full bg-purple-50 px-4 py-2 text-sm font-bold text-purple-700"
                   >
-                    Leer más <span className="text-2xl">›</span>
-                  </a>
-                </div>
+                    {horario}
+                  </span>
+                ))}
               </div>
 
-            </article>
+              {item.texto && (
+                <p className="mt-6 text-purple-950/70 leading-7">
+                  {item.texto}
+                </p>
+              )}
+            </div>
           ))}
         </div>
-
       </div>
     </section>
   )
 }
 
-export default BlogSection
+export default DeporteTerapeuticoSection
