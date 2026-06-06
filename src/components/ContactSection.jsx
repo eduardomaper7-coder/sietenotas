@@ -59,13 +59,14 @@ const ContactoSection = () => {
             </a>
 
             <a
-              href="https://www.google.com/maps/search/?api=1&query=C.+Torrubia,+4,+28911+Leganés,+Madrid"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center rounded-2xl border border-white px-6 py-4 text-lg font-bold text-white transition hover:bg-white hover:text-purple-700"
-            >
-              📍 Cómo llegar
-            </a>
+  href="https://www.google.com/maps/search/?api=1&query=C.+Torrubia,+4,+28911+Leganés,+Madrid"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center justify-center rounded-full border border-white bg-black px-8 py-5 text-lg font-extrabold text-white shadow-xl transition hover:bg-white hover:text-black"
+>
+  <span className="mr-2">📍</span>
+  <span>Cómo llegar</span>
+</a>
           </div>
 
           <div className="mt-10">

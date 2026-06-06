@@ -12,56 +12,48 @@ const Hero = () => {
       id="inicio"
       className="relative flex min-h-screen items-center justify-center overflow-hidden"
       style={{
-        backgroundImage: "url('/hero-siete-notas-leganes.png')",
+        backgroundImage: "url('/DSC_5270.webp')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         backgroundAttachment: isMobile ? 'scroll' : 'fixed',
       }}
     >
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-purple-900/45"></div>
-      <div className="absolute inset-0 bg-gradient-to-b from-purple-700/20 via-purple-800/35 to-purple-950/75"></div>
+      <div className="absolute inset-0 bg-black/55"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/45 to-black/90"></div>
 
-      <div className="relative z-10 mx-auto flex max-w-5xl flex-col items-center px-4 pb-12 pt-24 text-center sm:pb-16 sm:pt-28">
-        
-        {/* Título superior */}
-        <div className="mb-4 flex flex-col items-center sm:mb-6">
-          <span className="text-lg font-light tracking-widest text-white/80 sm:text-2xl">
-            ESCUELA DE BAILE Y MÚSICA EN LEGANÉS
+      <div className="relative z-10 mx-auto flex max-w-6xl flex-col items-center px-4 pb-12 pt-28 text-center sm:pb-16 sm:pt-32">
+        <div className="mb-5 flex flex-col items-center sm:mb-7">
+          <span className="text-sm font-bold tracking-[0.28em] text-white/80 sm:text-lg">
+            ESCUELA DE DANZA Y MÚSICA EN LEGANÉS
           </span>
 
-          <span className="text-2xl font-extrabold tracking-wide text-white sm:text-3xl md:text-4xl">
-            Siete Notas
+          <span className="mt-3 text-3xl font-black tracking-[0.18em] text-white sm:text-4xl md:text-5xl">
+            SIETE NOTAS
           </span>
         </div>
 
-        {/* H1 */}
-        <h1 className="max-w-4xl text-3xl font-extrabold leading-tight text-white sm:text-5xl md:text-7xl">
-          Aprende música y baile en Leganés
+        <h1 className="max-w-5xl text-4xl font-black leading-[0.95] tracking-[-0.06em] text-white sm:text-6xl md:text-8xl">
+          Aprende música, baile y mucho más en Leganés
         </h1>
 
-        {/* Texto (oculto en móvil) */}
-        <p className="mt-6 hidden max-w-3xl text-lg leading-9 text-white/90 sm:block sm:text-xl">
-          En Siete Notas disfrutamos enseñando música y baile a alumnos de todas
-          las edades, con clases dinámicas, atención cercana y un ambiente ideal
-          para aprender, expresarte y pasarlo bien.
+        <p className="mt-7 hidden max-w-3xl text-lg leading-9 text-white/90 sm:block sm:text-xl">
+          En Siete Notas disfrutamos enseñando danza, música y actividades para
+          todas las edades, con clases dinámicas, atención cercana y un ambiente
+          ideal para aprender, expresarte y pasarlo bien.
         </p>
 
-        {/* Badges */}
         <div className="mt-6 flex flex-col gap-2 sm:mt-8 sm:flex-row sm:gap-3">
-          <span className="rounded-full bg-white/95 px-5 py-2 text-sm font-bold text-purple-700 shadow-lg sm:px-6 sm:py-3 sm:text-base">
-            Clases de música y baile
+          <span className="rounded-full bg-white px-5 py-2 text-sm font-black text-black shadow-lg sm:px-6 sm:py-3 sm:text-base">
+            Danza · Música · Senior · Gym
           </span>
 
-          <span className="rounded-full bg-white/95 px-5 py-2 text-sm font-bold text-purple-700 shadow-lg sm:px-6 sm:py-3 sm:text-base">
+          <span className="rounded-full border border-white bg-black/40 px-5 py-2 text-sm font-black text-white backdrop-blur-md sm:px-6 sm:py-3 sm:text-base">
             Escuela en Leganés
           </span>
         </div>
 
-        {/* BOTONES (clave móvil) */}
         <div className="mt-8 flex w-full flex-col gap-3 sm:mt-10 sm:w-auto sm:flex-row">
-
           <a
             href={whatsappUrl}
             target="_blank"
@@ -80,33 +72,32 @@ const Hero = () => {
 
           <a
             href="tel:918281988"
-            className="flex w-full items-center justify-center rounded-xl bg-white/95 px-6 py-4 text-base font-extrabold text-purple-700 shadow-xl transition hover:bg-white sm:w-auto sm:px-8 sm:text-lg whitespace-nowrap"
+            className="flex w-full items-center justify-center whitespace-nowrap rounded-xl bg-white px-6 py-4 text-base font-extrabold text-black shadow-xl transition hover:bg-neutral-100 sm:w-auto sm:px-8 sm:text-lg"
             aria-label="Llamar a Siete Notas"
           >
             Llamar ahora
           </a>
-
         </div>
 
-        {/* Link servicios */}
         <a
-          href="#servicios"
-          className="mt-5 hidden items-center rounded-xl border border-white px-8 py-4 text-lg font-semibold text-white transition hover:bg-white hover:text-purple-700 sm:inline-flex"
-        >
-          Ver clases
-        </a>
+  href="#servicios"
+  className="mt-12 hidden flex-col items-center gap-3 text-sm font-black uppercase tracking-[0.25em] drop-shadow-lg transition hover:opacity-80 sm:inline-flex"
+  style={{ color: '#ffffff' }}
+  aria-label="Ver actividades de Siete Notas"
+>
+  <span style={{ color: '#ffffff' }}>
+    Ver actividades
+  </span>
 
-        {/* Scroll */}
-        <a
-          href="#servicios"
-          className="mt-12 hidden flex-col items-center text-base font-medium text-white sm:inline-flex"
-        >
-          Descubre más
-          <span className="mt-2 text-2xl">⌄</span>
-        </a>
+  <span
+    className="flex h-12 w-12 items-center justify-center rounded-full border border-white/60 bg-white/10 text-2xl backdrop-blur-md transition hover:bg-white hover:text-black"
+    style={{ color: '#ffffff' }}
+  >
+    ↓
+  </span>
+</a>
       </div>
 
-      {/* BOTÓN WHATSAPP FLOTANTE */}
       <a
         href={whatsappUrl}
         target="_blank"
@@ -120,7 +111,6 @@ const Hero = () => {
           className="h-8 w-8 sm:h-10 sm:w-10"
         />
       </a>
-
     </section>
   )
 }

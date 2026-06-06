@@ -1,111 +1,215 @@
+import { Link } from 'react-router-dom'
+
 const Footer = () => {
   const year = new Date().getFullYear()
 
   return (
-    <footer className="relative overflow-hidden bg-purple-950 text-white">
-      {/* Fondo decorativo */}
-      <div className="absolute -left-32 top-0 h-80 w-80 rounded-full bg-fuchsia-500/10 blur-3xl"></div>
-      <div className="absolute -right-32 bottom-0 h-96 w-96 rounded-full bg-purple-400/10 blur-3xl"></div>
+    <footer className="bg-black text-white">
+      <div className="mx-auto max-w-7xl px-6 py-20">
 
-      <div className="relative z-10 mx-auto max-w-7xl px-6 py-20">
-        
-        {/* Parte superior */}
-        <div className="grid gap-12 md:grid-cols-4">
-          
+        <div className="grid gap-12 lg:grid-cols-4">
+
           {/* Marca */}
           <div>
-            <h3 className="text-3xl font-extrabold tracking-[0.12em] text-white">
+            <h3 className="text-4xl font-black tracking-[0.18em]">
               SIETE NOTAS
             </h3>
-            <p className="mt-3 text-purple-200">
-              Escuela de Baile y Música en Leganés
+
+            <p className="mt-3 text-white/60">
+              Escuela de Danza y Música en Leganés
             </p>
 
-            <p className="mt-6 leading-8 text-white/70">
-              Un espacio donde música, danza, bienestar y aprendizaje se unen
-              para todas las edades.
+            <p className="mt-8 leading-8 text-white/70">
+              Un espacio donde niños, jóvenes y adultos pueden aprender,
+              disfrutar y desarrollar su talento a través de la danza,
+              la música y el bienestar.
             </p>
           </div>
 
-          {/* Navegación */}
+          {/* Actividades */}
           <div>
-            <h4 className="text-lg font-bold text-fuchsia-300">
-              Secciones
+            <h4 className="text-lg font-black uppercase tracking-[0.12em]">
+              Actividades
             </h4>
 
-            <ul className="mt-5 space-y-3 text-white/80">
-              <li><a href="#danza" className="hover:text-white">Danza</a></li>
-              <li><a href="#musica" className="hover:text-white">Música</a></li>
-              <li><a href="#senior" className="hover:text-white">Senior</a></li>
-              <li><a href="#gym" className="hover:text-white">Gym</a></li>
-              <li><a href="#belleza" className="hover:text-white">Belleza y Bienestar</a></li>
+            <ul className="mt-6 space-y-3 text-white/70">
+
+              <li>
+                <Link
+                  to="/danza-urbana"
+                  className="hover:text-white"
+                >
+                  Danza Urbana
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to="/musica"
+                  className="hover:text-white"
+                >
+                  Música
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to="/senior"
+                  className="hover:text-white"
+                >
+                  Senior
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to="/gym"
+                  className="hover:text-white"
+                >
+                  Gym
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to="/flamenco-danza-espanola-sevillanas"
+                  className="hover:text-white"
+                >
+                  Flamenco y Sevillanas
+                </Link>
+              </li>
+
             </ul>
           </div>
 
           {/* Contacto */}
           <div>
-            <h4 className="text-lg font-bold text-fuchsia-300">
+            <h4 className="text-lg font-black uppercase tracking-[0.12em]">
               Contacto
             </h4>
 
-            <div className="mt-5 space-y-4 text-white/80">
-              <p>📍 C. Torrubia, 4, 28911 Leganés, Madrid</p>
-              <p>📞 918 28 19 88</p>
-              <p>💬 662 12 85 72</p>
+            <div className="mt-6 space-y-4 text-white/70">
+
+              <p>
+                📍 C. Torrubia, 4
+                <br />
+                28911 Leganés, Madrid
+              </p>
+
+              <p>
+                📞{' '}
+                <a
+                  href="tel:918281988"
+                  className="hover:text-white"
+                >
+                  918 28 19 88
+                </a>
+              </p>
+
+              <p>
+                💬{' '}
+                <a
+                  href="https://wa.me/34662128572"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white"
+                >
+                  662 12 85 72
+                </a>
+              </p>
+
             </div>
           </div>
 
-          {/* CTA */}
+          {/* Horario */}
           <div>
-            <h4 className="text-lg font-bold text-fuchsia-300">
-              Empieza hoy
+            <h4 className="text-lg font-black uppercase tracking-[0.12em]">
+              Horario
             </h4>
 
-            <p className="mt-5 text-white/80">
-              Solicita información o reserva tu plaza.
-            </p>
+            <div className="mt-6 space-y-4 text-white/70">
 
-            <div className="mt-6 flex flex-col gap-3">
-              <a
-                href="tel:918281988"
-                className="rounded-2xl bg-white px-5 py-3 text-center font-bold text-purple-700 transition hover:scale-105"
-              >
-                Llamar ahora
-              </a>
+              <div>
+                <p className="font-bold text-white">
+                  Lunes a Viernes
+                </p>
 
-              <a
-                href="https://wa.me/34662128572"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-2xl bg-green-500 px-5 py-3 text-center font-bold text-white transition hover:scale-105 hover:bg-green-600"
-              >
-                WhatsApp
-              </a>
+                <p>
+                  10:00 - 21:30
+                </p>
+              </div>
+
+              <div>
+                <p className="font-bold text-white">
+                  Sábados
+                </p>
+
+                <p>
+                  Consultar actividades
+                </p>
+              </div>
+
+              <div>
+                <p className="font-bold text-white">
+                  Domingos
+                </p>
+
+                <p>
+                  Cerrado
+                </p>
+              </div>
+
             </div>
+
+            <a
+  href="https://wa.me/34662128572"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mt-8 inline-flex rounded-full bg-white px-6 py-3 font-bold !text-black transition hover:bg-neutral-200"
+>
+  Solicitar información
+</a>
+
           </div>
+
         </div>
 
-        {/* Línea */}
         <div className="my-12 h-px bg-white/10"></div>
 
-        {/* Parte inferior */}
-        <div className="flex flex-col items-center justify-between gap-4 text-center text-sm text-white/60 md:flex-row">
-          <p>
-            © {year} Siete Notas · Todos los derechos reservados
+        <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+
+          <p className="text-sm text-white/50">
+            © {year} Siete Notas · Escuela de Danza y Música en Leganés.
+            Todos los derechos reservados.
           </p>
 
-          <div className="flex gap-6">
-            <a href="#" className="hover:text-white">
-              Política de privacidad
-            </a>
-            <a href="#" className="hover:text-white">
-              Aviso legal
-            </a>
-            <a href="#" className="hover:text-white">
-              Cookies
-            </a>
+          <div className="flex flex-wrap gap-6 text-sm text-white/50">
+
+            <Link
+              to="/legal"
+              className="hover:text-white"
+            >
+              Aviso Legal
+            </Link>
+
+            <Link
+              to="/legal"
+              className="hover:text-white"
+            >
+              Política de Privacidad
+            </Link>
+
+            <Link
+              to="/legal"
+              className="hover:text-white"
+            >
+              Política de Cookies
+            </Link>
+
           </div>
+
         </div>
+
       </div>
     </footer>
   )
