@@ -83,7 +83,7 @@ const OtherServicesPage = () => {
           border-radius: 38px;
           background:
             linear-gradient(rgba(0,0,0,.38), rgba(0,0,0,.38)),
-            url('/otros-servicios-1.webp');
+            url('/DSC_5259.webp');
           background-size: cover;
           background-position: center;
           display: flex;
@@ -219,19 +219,19 @@ const OtherServicesPage = () => {
         .beauty-img {
           background-image:
             linear-gradient(rgba(0,0,0,.08), rgba(0,0,0,.08)),
-            url('/belleza-1.webp');
+            url('/DSC_5270.webp');
         }
 
         .rooms-img {
           background-image:
             linear-gradient(rgba(0,0,0,.08), rgba(0,0,0,.08)),
-            url('/alquiler-salas-1.webp');
+            url('/danza-urbana/DSC_5284.webp');
         }
 
         .events-img {
           background-image:
             linear-gradient(rgba(0,0,0,.08), rgba(0,0,0,.08)),
-            url('/eventos-1.webp');
+            url('/DSC_5283.webp');
         }
 
         .other-detail {
@@ -254,7 +254,7 @@ const OtherServicesPage = () => {
           border-radius: 34px;
           background:
             linear-gradient(rgba(0,0,0,.18), rgba(0,0,0,.18)),
-            url('/otros-servicios-2.webp');
+            url('/DSC_5286.webp');
           background-size: cover;
           background-position: center;
         }
@@ -268,7 +268,7 @@ const OtherServicesPage = () => {
           overflow: hidden;
           background:
             linear-gradient(rgba(0,0,0,.62), rgba(0,0,0,.62)),
-            url('/otros-servicios-3.webp');
+            url('/DSC_5284.webp');
           background-size: cover;
           background-position: center;
         }

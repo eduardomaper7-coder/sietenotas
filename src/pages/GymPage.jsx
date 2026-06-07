@@ -493,10 +493,7 @@ const GymPage = () => {
             </article>
           </div>
 
-          <div className="gym-note">
-            Actividades extraídas del horario: Pilates en horario de mañana y tarde,
-            y Zumba los martes y jueves por la tarde.
-          </div>
+         
         </section>
 
         <section className="gym-black-block">
