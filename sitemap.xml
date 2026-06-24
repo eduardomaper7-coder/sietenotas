@@ -1,73 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
-        <loc>/Actividades/alquiler-salas.html</loc>
-    </url>
-    <url>
-        <loc>/Actividades/ballet-clasico.html</loc>
-    </url>
-    <url>
-        <loc>/Actividades/guitarra.html</loc>
-    </url>
-    <url>
-        <loc>/Actividades/piano-teclado.html</loc>
-    </url>
-    <url>
-        <loc>/Actividades/pilates.html</loc>
-    </url>
-    <url>
-        <loc>/Actividades/zumba.html</loc>
-    </url>
-    <url>
-        <loc>/Blog/actividades-senior-leganes.html</loc>
-    </url>
-    <url>
-        <loc>/Blog/alquiler-salas-leganes.html</loc>
-    </url>
-    <url>
-        <loc>/Blog/clases-danza-ninos-leganes.html</loc>
-    </url>
-    <url>
-        <loc>/Blog/escuela-musica-leganes-instrumento.html</loc>
-    </url>
-    <url>
-        <loc>/Blog/flamenco-sevillanas-leganes.html</loc>
-    </url>
-    <url>
-        <loc>/Blog/pilates-zumba-leganes.html</loc>
-    </url>
-    <url>
-        <loc>/actividades.html</loc>
-    </url>
-    <url>
         <loc>/actividades-senior-leganes.html</loc>
-    </url>
-    <url>
-        <loc>/alquiler-salas.html</loc>
-    </url>
-    <url>
-        <loc>/alquiler-salas-leganes.html</loc>
     </url>
     <url>
         <loc>/aviso-legal.html</loc>
     </url>
     <url>
-        <loc>/ballet-clasico.html</loc>
-    </url>
-    <url>
-        <loc>/blog.html</loc>
-    </url>
-    <url>
-        <loc>/clases-danza-ninos-leganes.html</loc>
-    </url>
-    <url>
-        <loc>/contacto.html</loc>
-    </url>
-    <url>
         <loc>/danza-urbana.html</loc>
-    </url>
-    <url>
-        <loc>/escuela-musica-leganes-instrumento.html</loc>
     </url>
     <url>
         <loc>/eventos.html</loc>
@@ -76,34 +16,16 @@
         <loc>/flamenco-danza-espanola-sevillanas.html</loc>
     </url>
     <url>
-        <loc>/flamenco-sevillanas-leganes.html</loc>
-    </url>
-    <url>
-        <loc>/guitarra.html</loc>
-    </url>
-    <url>
         <loc>/gym.html</loc>
     </url>
     <url>
         <loc>/</loc>
     </url>
     <url>
-        <loc>/informacion-para-ia.html</loc>
-    </url>
-    <url>
         <loc>/musica.html</loc>
     </url>
     <url>
         <loc>/otros-servicios.html</loc>
-    </url>
-    <url>
-        <loc>/piano-teclado.html</loc>
-    </url>
-    <url>
-        <loc>/pilates.html</loc>
-    </url>
-    <url>
-        <loc>/pilates-zumba-leganes.html</loc>
     </url>
     <url>
         <loc>/politica-de-cookies.html</loc>
@@ -116,11 +38,5 @@
     </url>
     <url>
         <loc>/senior.html</loc>
-    </url>
-    <url>
-        <loc>/tratamientos.html</loc>
-    </url>
-    <url>
-        <loc>/zumba.html</loc>
     </url>
 </urlset>
